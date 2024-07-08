@@ -47,10 +47,8 @@ export default {
             .then(res=>{
               alert("购买成功"+res)
             })
-
       }
-
-    }
+    }//buy()
 
   },
   mounted() {

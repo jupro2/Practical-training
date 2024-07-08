@@ -53,15 +53,19 @@ export default {
     welcome: '',
     menus: [
       { index: '常用', icon: 'platform-eleme', children: [
-          { path: '/hospital/hospital', menu: '医院管理', have: ['超级管理员'] },
+          { path: '/department', menu: '科室管理', have: ['超级管理员'] },
+          { path: '/user', menu: '用户管理', have: ['超级管理员'] },
+
+          { path: '/myorder/order', menu: '我的病号', have: ['医生'] },
+
           { path: '/hospital/hospitalList', menu: '医院挂号', have: ['用户'] },
           { path: '/dept/deptList', menu: '科室挂号', have: ['用户'] },
           { path: '/doctor/doctorList', menu: '医生挂号', have: ['用户'] },
-          { path: '/myorder/order', menu: '我的病号', have: ['医生'] },
-          { path: '/user', menu: '用户管理', have: ['超级管理员'] },
+
         ]},
       { index: '药品', icon: 'platform-eleme', children: [
           { path: '/category', menu: '药品类别', have: ['超级管理员'] },
+
           { path: '/medicine', menu: '药品信息', have: ['超级管理员','用户','医生'] },
 
         ]},
