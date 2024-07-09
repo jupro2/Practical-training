@@ -4,11 +4,12 @@
 
       <Table :util="{
     httpUrl:'/register',
-    params:'',//请求地址
+    params:'/list',//请求地址
     //id:'主键',
     name:'患者姓名',
-    age:'生日',
-    state:'状态',
+    age:'生日/-1',
+    aggg:'年龄/-1',
+    statee:'状态/-1',
     birth:'就诊日期///日期',
   }" :curpage="1"></Table>
 
@@ -23,7 +24,6 @@ import {reactive, toRefs} from "vue";
 export default {
   name: "order",
   components: {},
-
 
   setup() {
     let state = reactive({

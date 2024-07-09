@@ -1,6 +1,7 @@
 package com.example.backspring.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -32,4 +33,10 @@ public class Register {
     private int state;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date birth;
+
+    @TableField(exist = false)//表示表中没有
+    private Integer aggg;
+
+    @TableField(exist = false)//将int转化为字符串
+    private String statee;
 }

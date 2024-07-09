@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,6 +31,7 @@ public class PhysicianController extends HttpController<PhysicianMapper, Physici
     DepartmentMapper departmentMapper;
     @RequestMapping("/did")
     public Record cid(){
+
         List<Department> departments = departmentMapper.selectList(null);
         Record r = new Record();
         for (Department department : departments){
