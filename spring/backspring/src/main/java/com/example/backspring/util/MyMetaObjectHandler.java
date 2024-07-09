@@ -10,16 +10,19 @@ import java.util.Date;
  * @author 鞠国鹏
  * @Date 2024 07 2024/7/8
  */
+
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
 
     @Override
     public void insertFill(MetaObject metaObject) {
         this.setFieldValByName("ctime", new Date(), metaObject);
+        this.setFieldValByName("dtime", new Date(), metaObject);
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
-
+        this.setFieldValByName("dtime", new Date(), metaObject);
     }
+
 }

@@ -7,9 +7,9 @@
     params:'',//请求地址
     //id:'主键',
     name:'患者姓名',
-    age:'年龄',
+    age:'生日',
     state:'状态',
-    birth:'就诊日期',
+    birth:'就诊日期///日期',
   }" :curpage="1"></Table>
 
   </div>

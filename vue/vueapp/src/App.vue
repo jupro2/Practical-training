@@ -58,7 +58,7 @@ export default {
 
           { path: '/myorder/order', menu: '我的病号', have: ['医生'] },
 
-          { path: '/hospital/hospitalList', menu: '医院挂号', have: ['用户'] },
+          // { path: '/hospital/hospitalList', menu: '医院挂号', have: ['用户'] },
           { path: '/dept/deptList', menu: '科室挂号', have: ['用户'] },
           { path: '/doctor/doctorList', menu: '医生挂号', have: ['用户'] },
 
